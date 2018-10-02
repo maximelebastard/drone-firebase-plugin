@@ -9,7 +9,7 @@
 set -o xtrace && \
 
 if [ "$PLUGIN_DEBUG" = true ] ; then
-  echo $(pwd) && ls -lah && \
+  echo $(pwd) && ls -lah;
 fi && \
 
 
