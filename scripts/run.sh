@@ -8,6 +8,11 @@
 
 set -o xtrace && \
 
+if [ "$PLUGIN_DEBUG" = true ] ; then
+  echo $(pwd) && ls -lah && \
+fi && \
+
+
 cp $PLUGIN_FIREBASE_JSON "$PLUGIN_DIR/firebase.json" && \
 cp $PLUGIN_FIREBASE_RC "$PLUGIN_DIR/.firebaserc" && \
 
