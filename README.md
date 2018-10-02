@@ -13,6 +13,8 @@ pipeline:
     project_id: FirebaseProjectId
     message: CI deploy of commit ${COMMIT}
     dir: ./
+    firebase_json: ./firebase.json
+    firebase_rc: ./.firebaserc
     secrets:
       - source: MY_TOKEN_IN_DRONE_SECRETS
         target: FIREBASE_TOKEN
