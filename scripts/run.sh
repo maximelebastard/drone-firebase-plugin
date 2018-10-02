@@ -8,8 +8,6 @@
 
 set -o xtrace && \
 
-cd /app && \
-
 cp $PLUGIN_FIREBASE_JSON "$PLUGIN_DIR/firebase.json" && \
 cp $PLUGIN_FIREBASE_RC "$PLUGIN_DIR/.firebaserc" && \
 
