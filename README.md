@@ -13,8 +13,6 @@ pipeline:
     project_id: FirebaseProjectId
     message: CI deploy of commit ${COMMIT}
     dir: ./
-    firebase_json: ./firebase.json
-    firebase_rc: ./.firebaserc
     secrets:
       - source: MY_TOKEN_IN_DRONE_SECRETS
         target: FIREBASE_TOKEN
@@ -30,8 +28,7 @@ The FIREBASE_TOKEN secret should be exposed.
 * **project_id** : Identifier of the firebase project
 * **message**: Deployment message
 * **dir**: Path of your project
-* **firebase_json**: Path of your firebase.json file
-* **firebase_rc**: Path of your .firebaserc file
+> dir must contain a firebase.json and a .firebaserc file
 
 ## Secrets
 
