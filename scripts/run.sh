@@ -18,4 +18,6 @@ cp $PLUGIN_FIREBASE_RC "$PLUGIN_DIR/.firebaserc" && \
 
 cd $PLUGIN_DIR && \
 
+firebase use $PLUGIN_PROJECT_ID && \
+
 firebase deploy --token "$FIREBASE_TOKEN" -m "$PLUGIN_MESSAGE"
