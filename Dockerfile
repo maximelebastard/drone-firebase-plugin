@@ -1,4 +1,5 @@
-FROM node:8
+ # https://github.com/nodejs/docker-node/issues/941
+FROM node:8.13
 
 RUN yarn global add firebase-tools -y
 
