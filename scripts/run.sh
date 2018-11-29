@@ -13,4 +13,4 @@ fi && \
 
 cd $PLUGIN_DIR && \
 
-firebase deploy --token "$FIREBASE_TOKEN" -m "$PLUGIN_MESSAGE" --project "$PLUGIN_PROJECT_ID"
+firebase deploy -m "$PLUGIN_MESSAGE" --project "$PLUGIN_PROJECT_ID"
