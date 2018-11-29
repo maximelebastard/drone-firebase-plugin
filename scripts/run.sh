@@ -20,4 +20,4 @@ fi && \
 
 cd $PLUGIN_DIR && \
 
-firebase deploy -m "$PLUGIN_MESSAGE" --project "$PLUGIN_PROJECT_ID" "$ONLY"
+firebase deploy -m "$PLUGIN_MESSAGE" --project "$PLUGIN_PROJECT_ID" $ONLY
