@@ -1,5 +1,6 @@
 #! /bin/bash
 
+[ -z "$FIREBASE_TOKEN" ] && echo "Please generate, set secret and expose the \"FIREBASE_TOKEN\" parameter. \n Run `firebase deploy:ci` locally to get a FIREBASE_TOKEN" && exit 1;
 [ -z "$PLUGIN_PROJECT_ID" ] && echo "Please set the \"project_id\" parameter" && exit 1;
 [ -z "$PLUGIN_MESSAGE" ] && echo "Please set the \"message\" parameter" && exit 1;
 [ -z "$PLUGIN_DIR" ] && echo "Please set the \"dir\" parameter" && exit 1;
