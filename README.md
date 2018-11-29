@@ -32,6 +32,6 @@ The FIREBASE_TOKEN secret should be exposed.
 
 ## Secrets
 
-Run `firebase deploy:ci` locally to get a FIREBASE_TOKEN
+Run `firebase login:ci` locally to get a FIREBASE_TOKEN
 
 Make sure it is exposed through the FIREBASE_TOKEN secret.
