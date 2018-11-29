@@ -29,6 +29,7 @@ The FIREBASE_TOKEN secret should be exposed.
 * **message**: Deployment message
 * **dir**: Path of your project
 > dir must contain a firebase.json and a .firebaserc file
+* **only**: See the only parameter https://firebase.google.com/docs/cli/
 
 ## Secrets
 
